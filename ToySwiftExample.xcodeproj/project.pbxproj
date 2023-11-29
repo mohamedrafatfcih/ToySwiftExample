@@ -63,12 +63,20 @@
 		785CA0942B16771D002175EB /* ToySwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				785CA0A62B170EC6002175EB /* FirstGroup */,
 				785CA0952B16771D002175EB /* main.swift */,
 				785CA09C2B1677CB002175EB /* newFile.swift */,
 				785CA09E2B1677E0002175EB /* renamedFile.swift */,
-				785CA0A22B1678DB002175EB /* newAnotherFile.swift */,
 			);
 			path = ToySwiftExample;
+			sourceTree = "<group>";
+		};
+		785CA0A62B170EC6002175EB /* FirstGroup */ = {
+			isa = PBXGroup;
+			children = (
+				785CA0A22B1678DB002175EB /* newAnotherFile.swift */,
+			);
+			path = FirstGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
