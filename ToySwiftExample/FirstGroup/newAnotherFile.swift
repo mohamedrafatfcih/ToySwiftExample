@@ -32,6 +32,14 @@ class A {
     func mA(){
         print("mA")
     }
+    
+    subscript(index: Int) -> String {
+            return "Value at index \(index)"
+        }
+
+    subscript(key: String) -> String {
+        return "Value for key \(key)"
+    }
 }
 
 
@@ -44,6 +52,10 @@ struct S{
         func mSS(){
             print("mSS")
         }
+        
+        subscript(ss: Int) -> String {
+                return "Value at index \(ss)"
+            }
     }
     
     func mS(){
@@ -77,6 +89,10 @@ enum EN{
     
     var enVariable: Int {
         3
+    }
+    
+    subscript(en: Int) -> String {
+        return "Value at index \(en)"
     }
 }
 
