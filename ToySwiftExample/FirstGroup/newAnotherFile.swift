@@ -17,6 +17,10 @@ class A {
         func mB(){
             print("mB")
         }
+        
+        enum BEN{
+            case b1
+        }
     }
     
     struct AS{
@@ -44,5 +48,34 @@ struct S{
     
     func mS(){
         print("mS")
+    }
+    
+    enum SEN {
+        case s1
+    }
+}
+
+enum EN{
+    case x
+    case y
+    
+    class EnA {
+        
+    }
+    
+    struct EnS{
+        
+    }
+    
+    enum EnSub{
+        case z
+    }
+    
+    func mEn(){
+        print("mEn")
+    }
+    
+    var enVariable: Int {
+        3
     }
 }
