@@ -79,3 +79,24 @@ enum EN{
         3
     }
 }
+
+
+
+protocol MyProtocol {
+    
+    var requiredProperty: Int { get set }
+
+    init(requiredParameter: Int)
+
+    associatedtype Item
+    
+    func addItem(_ item: Item)
+    func requiredMethod()
+    func method()
+}
+
+extension MyProtocol {
+    func method() {
+        print("Default implementation of method")
+    }
+}
