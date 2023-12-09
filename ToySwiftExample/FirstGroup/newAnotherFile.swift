@@ -40,12 +40,19 @@ class A {
     subscript(key: String) -> String {
         return "Value for key \(key)"
     }
+    
+    deinit{
+        print("A deInit")
+    }
 }
 
 
 struct S{
     class SA{
-        
+      
+        deinit {
+            print("SA deInit")
+        }
     }
     
     struct SS{
