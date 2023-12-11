@@ -17,10 +17,6 @@ class A {
         func mB(){
             print("mB")
         }
-        
-        enum BEN{
-            case b1
-        }
     }
     
     struct AS{
