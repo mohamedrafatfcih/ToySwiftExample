@@ -11,6 +11,13 @@ func testAnotherFile(){
     
 }
 
+func advFunc(param1: Int, param2: Int) -> Int {
+    if param1 > param1 {
+        return param1
+    }
+    return param2
+}
+
 class A {
     
     init(name: String){
