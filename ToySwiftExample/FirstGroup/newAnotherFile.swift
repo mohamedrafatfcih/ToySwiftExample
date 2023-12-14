@@ -13,6 +13,9 @@ func testAnotherFile(){
 
 class A {
     
+    init(name: String){
+        
+    }
     class B {
         func mB(){
             print("mB")
@@ -25,8 +28,13 @@ class A {
         }
     }
     
-    func mA(){
-        print("mA")
+    func mA(param1: Int) -> Int{
+        let x = param1 + 2
+        if x == 3 {
+            print("mA")
+            return param1
+        }
+        return x
     }
     
     subscript(index: Int) -> String {
