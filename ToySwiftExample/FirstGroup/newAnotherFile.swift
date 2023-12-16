@@ -16,6 +16,11 @@ func advFunc(param1: Int, param2: Int) -> Int {
         if param1 == param2 {
             return 0
         }
+        func subSubAdvFunc(p: Int) -> Int
+        {
+            p + 2
+        }
+        
         return param1
     }
     
