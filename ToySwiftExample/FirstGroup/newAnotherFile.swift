@@ -13,7 +13,15 @@ func testAnotherFile(){
 
 func advFunc(param1: Int, param2: Int) -> Int {
     if param1 > param1 {
+        if param1 == param2 {
+            return 0
+        }
         return param1
+    }
+    
+    func subAdvFunc(p: Int) -> Int
+    {
+        p + 2
     }
     return param2
 }
