@@ -63,9 +63,9 @@
 		785CA0942B16771D002175EB /* ToySwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				78A86DF72B3F54E1001ED6EC /* SecondGroup */,
 				785CA0A62B170EC6002175EB /* FirstGroup */,
 				785CA0952B16771D002175EB /* main.swift */,
-				785CA09C2B1677CB002175EB /* newFile.swift */,
 				785CA09E2B1677E0002175EB /* renamedFile.swift */,
 			);
 			path = ToySwiftExample;
@@ -77,6 +77,14 @@
 				785CA0A22B1678DB002175EB /* newAnotherFile.swift */,
 			);
 			path = FirstGroup;
+			sourceTree = "<group>";
+		};
+		78A86DF72B3F54E1001ED6EC /* SecondGroup */ = {
+			isa = PBXGroup;
+			children = (
+				785CA09C2B1677CB002175EB /* newFile.swift */,
+			);
+			path = SecondGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
