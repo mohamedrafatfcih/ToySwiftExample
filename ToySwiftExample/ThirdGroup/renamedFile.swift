@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class RenamedClass {
+    
+    func rename(){
+        
+    }
+}
