@@ -22,6 +22,8 @@ func advFunc(param1: Int, param2: Int) -> Int {
         }
         
         return param1
+    }else if param1 < param2 {
+        return param1 + 3
     }
     
     func subAdvFunc(p: Int) -> Int
