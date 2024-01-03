@@ -33,7 +33,8 @@ func advFunc(param1: Int, param2: Int) -> Int {
     {
         p + 2
     }
-    return param2
+    let result = param2.add(this: 4).multiply(this: 5).divide(this: 6)
+    return result
 }
 
 class A {
@@ -150,5 +151,19 @@ protocol MyProtocol {
 extension MyProtocol {
     func method() {
         print("Default implementation of method")
+    }
+}
+
+extension Int {
+    func add(this number: Int) -> Int {
+        self + number
+    }
+    
+    func multiply(this number: Int) -> Int {
+        self * number
+    }
+    
+    func divide(this number: Int) -> Int {
+        self / number
     }
 }
