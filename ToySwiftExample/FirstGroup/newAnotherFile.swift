@@ -34,7 +34,8 @@ func advFunc(param1: Int, param2: Int) -> Int {
         p + 2
     }
     let result = param2.add(this: 4).multiply(this: 5).divide(this: 6)
-    return result
+    let anotherResult = result.multiply(this: 3.divide(this: 5.add(this: 2)))
+    return anotherResult
 }
 
 class A {
