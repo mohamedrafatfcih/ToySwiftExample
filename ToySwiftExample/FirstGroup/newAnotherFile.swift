@@ -11,7 +11,18 @@ func testAnotherFile(){
     
 }
 
-func advFunc(param1: Int, param2: Int) -> Int {
+func advFunc(param1: Int = 3.add(this: 5), param2: Int) -> Int {
+    
+    var x: Int = 2 {
+        willSet {
+            print("Will set value for x")
+        }
+        
+        didSet {
+            print("Did set value for x")
+        }
+    }
+    
     if param1 > param1 {
         if param1 == param2 {
             return 0
@@ -33,7 +44,8 @@ func advFunc(param1: Int, param2: Int) -> Int {
     {
         p + 2
     }
-    let result = param2.add(this: 4).multiply(this: 5).divide(this: 6)
+    var result = param2.add(this: 4).multiply(this: 5).divide(this: 6)
+    result += 1
     let anotherResult = result.multiply(this: 3.divide(this: 5.add(this: 2)))
     return anotherResult
 }
