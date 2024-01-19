@@ -16,6 +16,9 @@ func advFunc(param1: Int = 3.add(this: 5), param2: Int) -> Int {
     var x: Int = 2 {
         willSet {
             print("Will set value for x")
+            func varFunc() {
+                print("varFunc statement")
+            }
         }
         
         didSet {
@@ -44,6 +47,11 @@ func advFunc(param1: Int = 3.add(this: 5), param2: Int) -> Int {
     {
         p + 2
     }
+    let aObject = A(name: "namedParam")
+    var dict: [String: A] = [:]
+    dict["aObjectKey"] = aObject
+    let tuble: (dic: [String: A], value: A) = (dict, aObject)
+    
     var result = param2.add(this: 4).multiply(this: 5).divide(this: 6)
     result += 1
     let anotherResult = result.multiply(this: 3.divide(this: 5.add(this: 2)))
