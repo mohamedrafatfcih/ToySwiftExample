@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		78543FB82B60D7B600CEF0F5 /* AddedFileRenamed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78543FB72B60D7B600CEF0F5 /* AddedFileRenamed.swift */; };
-		78543FBA2B60DAB400CEF0F5 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78543FB92B60DAB400CEF0F5 /* TestFile.swift */; };
 		785CA0962B16771D002175EB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785CA0952B16771D002175EB /* main.swift */; };
 		785CA09F2B1677E0002175EB /* renamedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785CA09E2B1677E0002175EB /* renamedFile.swift */; };
 		785CA0A32B1678DB002175EB /* newAnotherFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785CA0A22B1678DB002175EB /* newAnotherFile.swift */; };
@@ -28,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		78543FB72B60D7B600CEF0F5 /* AddedFileRenamed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedFileRenamed.swift; sourceTree = "<group>"; };
-		78543FB92B60DAB400CEF0F5 /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
 		785CA0922B16771D002175EB /* ToySwiftExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ToySwiftExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		785CA0952B16771D002175EB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		785CA09E2B1677E0002175EB /* renamedFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = renamedFile.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				785CA09E2B1677E0002175EB /* renamedFile.swift */,
-				78543FB92B60DAB400CEF0F5 /* TestFile.swift */,
 			);
 			path = ThirdGroup;
 			sourceTree = "<group>";
@@ -152,7 +149,6 @@
 				785CA0962B16771D002175EB /* main.swift in Sources */,
 				785CA0A32B1678DB002175EB /* newAnotherFile.swift in Sources */,
 				785CA09F2B1677E0002175EB /* renamedFile.swift in Sources */,
-				78543FBA2B60DAB400CEF0F5 /* TestFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
