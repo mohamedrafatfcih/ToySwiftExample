@@ -11,7 +11,7 @@ func testAnotherFile(){
     
 }
 
-func advFunc(param1: Int = 3.add(this: 5), param2: Int) -> Int {
+func advFunc(param1: Int = 3.add(this: 5), secondParam: Int) -> Int {
     
     var x: Int = 2 {
         willSet {
@@ -27,7 +27,7 @@ func advFunc(param1: Int = 3.add(this: 5), param2: Int) -> Int {
     }
     
     if param1 > param1 {
-        if param1 == param2 {
+        if param1 == secondParam {
             return 0
         }
         func subSubAdvFunc(p: Int) -> Int
@@ -36,10 +36,10 @@ func advFunc(param1: Int = 3.add(this: 5), param2: Int) -> Int {
         }
         
         return param1
-    }else if param1 < param2 {
+    }else if param1 < secondParam {
         return param1 + 3
     }else {
-        let newValue = param1 * param2
+        let newValue = param1 * secondParam
         return newValue
     }
     
@@ -52,7 +52,7 @@ func advFunc(param1: Int = 3.add(this: 5), param2: Int) -> Int {
     dict["aObjectKey"] = aObject
     let tuble: (dic: [String: A], value: A) = (dict, aObject)
     
-    var result = param2.add(this: 4).multiply(this: 5).divide(this: 6)
+    var result = secondParam.add(this: 4).multiply(this: 5).divide(this: 6)
     result += 1
     let anotherResult = result.multiply(this: 3.divide(this: 5.add(this: 2)))
     return anotherResult
