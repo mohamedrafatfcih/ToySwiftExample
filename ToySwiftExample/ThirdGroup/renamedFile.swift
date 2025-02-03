@@ -9,8 +9,8 @@ import Foundation
 
 class RenamedClass {
     
-    func renamedFunc(){
+    func renamedFunc(isTested: Bool){
         let renamedObject = RenamedClass()
-        renamedObject.renamedFunc()
+        renamedObject.renamedFunc(isTested: true)
     }
 }
