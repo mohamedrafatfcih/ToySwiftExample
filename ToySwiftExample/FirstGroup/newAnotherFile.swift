@@ -11,7 +11,7 @@ func testAnotherFile(){
     
 }
 
-func advFunc(param1: Int = 3.add(this: 5), secondParam: Int) -> Int {
+func advFunc(param1Renamed: Int = 3.add(this: 5), secondParam: Int) -> Int {
     
     var x: Int = 2 {
         willSet {
@@ -26,8 +26,8 @@ func advFunc(param1: Int = 3.add(this: 5), secondParam: Int) -> Int {
         }
     }
     
-    if param1 > param1 {
-        if param1 == secondParam {
+    if param1Renamed > param1Renamed {
+        if param1Renamed == secondParam {
             return 0
         }
         func subSubAdvFunc(p: Int) -> Int
@@ -35,11 +35,11 @@ func advFunc(param1: Int = 3.add(this: 5), secondParam: Int) -> Int {
             p + 2
         }
         
-        return param1
-    }else if param1 < secondParam {
-        return param1 + 3
+        return param1Renamed
+    }else if param1Renamed < secondParam {
+        return param1Renamed + 3
     }else {
-        let newValue = param1 * secondParam
+        let newValue = param1Renamed * secondParam
         return newValue
     }
     
