@@ -65,11 +65,12 @@ func extractedMethod(param: Int) -> Int {
 
 class A {
     
-    convenience init(name: String){
-        self.init()
-    }
-    
-    init() {
+    init(name: String) {
+        var statement = "This is class " + name
+        let statement2 = "initializer"
+        statement += statement2
+        let statementParts = statement.split(separator: " ").map { String ($0) }
+        print(statementParts)
     }
     
     class B {
