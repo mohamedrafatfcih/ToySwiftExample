@@ -65,9 +65,13 @@ func extractedMethod(param: Int) -> Int {
 
 class A {
     
-    init(name: String){
-        
+    convenience init(name: String){
+        self.init()
     }
+    
+    init() {
+    }
+    
     class B {
         func mB(){
             print("mB")
@@ -90,8 +94,12 @@ class A {
     }
     
     subscript(index: Int) -> String {
-            return "Value at index \(index)"
-        }
+        return self[1, 2]
+    }
+    
+    subscript(index: Int, index2: Int) -> String {
+        return "Value at index \(index), and index2 \(index2)"
+    }
 
     subscript(key: String) -> String {
         return "Value for key \(key)"
