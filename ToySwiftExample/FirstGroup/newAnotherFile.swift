@@ -62,22 +62,12 @@ func advFunc(param1Renamed: Int = 3.add(this: 5), secondParam: Int) -> Int {
 
 class A {
     
-    convenience init(name: String) {
-        self.init(statementsParts: [])
-        let statementParts = buildStatementsParts(name: name)
-    }
-    
-    init(statementsParts: [String]) {
-        print(statementsParts)
-        _ = statementsParts.sorted()
-    }
-    
-    func buildStatementsParts(name: String) -> [String] {
+    init(name: String) {
         var statement = "This is class " + name
         let statement2 = "initializer"
         statement += statement2
         let statementParts = statement.split(separator: " ").map { String ($0) }
-        return statementParts
+        print(statementParts)
     }
     
     class B {
