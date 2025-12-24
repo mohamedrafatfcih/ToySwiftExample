@@ -47,19 +47,16 @@ func advFunc(param1Renamed: Int = 3.add(this: 5), secondParam: Int) -> Int {
     {
         p + 2
     }
-    let anotherResult = extractedMethod(param: secondParam)
-    return anotherResult
-}
-
-func extractedMethod(param: Int) -> Int {
+    
     let aObject = A(name: "namedParam")
     var dict: [String: A] = [:]
     dict["aObjectKey"] = aObject
     let tuble: (dic: [String: A], value: A) = (dict, aObject)
     
-    var result = param.add(this: 4).multiply(this: 5).divide(this: 6)
+    var result = secondParam.add(this: 4).multiply(this: 5).divide(this: 6)
     result += 1
     let anotherResult = result.multiply(this: 3.divide(this: 5.add(this: 2)))
+    
     return anotherResult
 }
 
