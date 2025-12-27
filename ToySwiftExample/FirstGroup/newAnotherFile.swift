@@ -7,10 +7,11 @@
 
 import Foundation
 
-func testAnotherFile(){
+fileprivate func testAnotherFile(){
     
 }
 
+@discardableResult
 func advFunc(param1Renamed: Int = 3.add(this: 5), secondParam: Int) -> Int {
     
     var x: Int = 2 {
@@ -60,7 +61,7 @@ func advFunc(param1Renamed: Int = 3.add(this: 5), secondParam: Int) -> Int {
     return anotherResult
 }
 
-class A {
+public class A {
     
     init(name: String) {
         var statement = "This is class " + name
@@ -167,7 +168,7 @@ enum EN{
 
 
 
-protocol MyProtocol {
+public protocol MyProtocol {
     
     var requiredProperty: Int { get set }
 
@@ -186,7 +187,7 @@ extension MyProtocol {
     }
 }
 
-extension Int {
+fileprivate extension Int {
     func add(this number: Int) -> Int {
         self + number
     }
