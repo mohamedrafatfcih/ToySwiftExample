@@ -61,9 +61,18 @@ func advFunc(param1Renamed: Int = 3.add(this: 5), secondParam: Int) -> Int {
     return anotherResult
 }
 
-public class A {
+public class A: Identifiable {
+    
+    public let id: UUID = UUID()
+    private(set) var name: String
+    public var fullName: String {
+        let fullname = name + " Class"
+        let capitalizedFullName = fullname.capitalized
+        return capitalizedFullName
+    }
     
     init(name: String) {
+        self.name = name
         var statement = "This is class " + name
         let statement2 = "initializer"
         statement += statement2
@@ -71,7 +80,7 @@ public class A {
         print(statementParts)
     }
     
-    class B {
+    final class B {
         func mB(){
             print("mB")
         }
@@ -92,7 +101,7 @@ public class A {
         return x
     }
     
-    subscript(index: Int) -> String {
+    public subscript(index: Int) -> String {
         return self[1, 2]
     }
     
@@ -158,7 +167,8 @@ enum EN{
     }
     
     var enVariable: Int {
-        3
+        let result = 5 + 3
+        return result
     }
     
     subscript(en: Int) -> String {
