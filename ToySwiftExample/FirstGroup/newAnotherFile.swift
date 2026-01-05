@@ -67,8 +67,7 @@ public class A: Identifiable {
     private(set) var name: String
     public var fullName: String {
         let fullname = name + " Class"
-        let capitalizedFullName = fullname.capitalized
-        return capitalizedFullName
+        return fullname
     }
     
     init(name: String) {
@@ -166,9 +165,8 @@ enum EN{
         print("mEn")
     }
     
-    var enVariable: Int {
-        let result = 5 + 3
-        return result
+    var otherLangVariable: String {
+        "AR"
     }
     
     subscript(en: Int) -> String {
@@ -181,6 +179,7 @@ enum EN{
 public protocol MyProtocol {
     
     var requiredProperty: Int { get set }
+    var secondProperty: String? { get }
 
     init(requiredParameter: Int)
 
