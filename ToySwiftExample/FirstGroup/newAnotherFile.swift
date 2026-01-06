@@ -141,13 +141,13 @@ struct S{
     }
     
     enum SEN {
-        case s1
+        
     }
 }
 
 enum EN{
     case x
-    case y
+    case y(barName: String, Int)
     
     class EnA {
         
@@ -159,13 +159,14 @@ enum EN{
     
     enum EnSub{
         case z
+        case w
     }
     
     func mEn(){
         print("mEn")
     }
     
-    var otherLangVariable: String {
+    private var otherLangVariable: String {
         "AR"
     }
     
