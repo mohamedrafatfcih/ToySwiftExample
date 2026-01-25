@@ -7,8 +7,10 @@
 
 import Foundation
 
-fileprivate func testAnotherFile(){
-    
+private func testAnotherFile() async throws -> String {
+    try await Task.sleep(for: .seconds(3))
+    let testResult = "Test result is fine"
+    return testResult
 }
 
 @discardableResult
@@ -50,6 +52,7 @@ func advFunc(param1Renamed: Int = 3.add(this: 5), secondParam: Int) -> Int {
     }
     
     let aObject = A(name: "namedParam")
+    try? aObject.getTestResult()
     var dict: [String: A] = [:]
     dict["aObjectKey"] = aObject
     let tuble: (dic: [String: A], value: A) = (dict, aObject)
@@ -77,6 +80,13 @@ public class A: Identifiable {
         statement += statement2
         let statementParts = statement.split(separator: " ").map { String ($0) }
         print(statementParts)
+    }
+    
+    func getTestResult() throws {
+        Task {
+            let testResult = try await testAnotherFile()
+            print(testResult)
+        }
     }
     
     final class B {
