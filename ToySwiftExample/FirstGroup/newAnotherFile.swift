@@ -10,6 +10,9 @@ import Foundation
 private func testAnotherFile() async throws -> String {
     try await Task.sleep(for: .seconds(3))
     let testResult = "Test result is fine"
+    if testResult.count > 12 {
+        throw ErrorType.functionError
+    }
     return testResult
 }
 
@@ -64,6 +67,11 @@ func advFunc(param1Renamed: Int = 3.add(this: 5), secondParam: Int) -> Int {
     return anotherResult
 }
 
+enum ErrorType: Error {
+    case functionError
+    case classError
+}
+
 public class A: Identifiable {
     
     public let id: UUID = UUID()
@@ -84,8 +92,12 @@ public class A: Identifiable {
     
     func getTestResult() throws {
         Task {
-            let testResult = try await testAnotherFile()
-            print(testResult)
+            do {
+                let testResult = try await testAnotherFile()
+                print(testResult)
+            } catch {
+                throw ErrorType.classError
+            }
         }
     }
     
